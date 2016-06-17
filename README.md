@@ -1,5 +1,6 @@
 # React Native Material Initials
-> Initial Icons for React Native
+
+![react-native-material-initials](https://cloud.githubusercontent.com/assets/5383963/16163426/20d1c50c-34a7-11e6-9b4c-eebea5f5831b.png)
 
 ## Usage
 ```JavaScript
