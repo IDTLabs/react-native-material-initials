@@ -3,9 +3,12 @@
 
 ## Usage
 ```JavaScript
-<Initicon
+<MaterialInitials
+  style={{alignSelf: 'center'}}
+  backgroundColor={'red'}
+  color={'white'}
   size={100}
-  text="Test Account"
+  text={'John Doe'}
   single={false}
 />
 ```
@@ -17,7 +20,7 @@ $ npm install --save react-native-material-initials
 
 ## React Native
 ```JavaScript
-var Initicon = require('react-initicon/native');
+var MaterialInitials = require('react-native-material-initials/native');
 ```
 
 ## Props
