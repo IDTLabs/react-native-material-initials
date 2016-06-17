@@ -26,9 +26,9 @@ class NativeIniticon extends Component {
 
   render() {
     return (
-      <View style={{backgroundColor: 'white'}}>
+      <View style={{backgroundColor: 'transparent'}}>
         <View style={[styles.icon, {
-                    backgroundColor: 'red',
+                    backgroundColor: this.props.backgroundColor,
                     height: this.props.size,
                     width: this.props.size,
                     borderRadius: this.props.size/2
@@ -45,17 +45,16 @@ class NativeIniticon extends Component {
 NativeIniticon.propTypes = {
   text: React.PropTypes.string.isRequired,
   size: React.PropTypes.any.isRequired,
-  seed: React.PropTypes.number,
   color: React.PropTypes.any,
+  backgroundColor: React.PropTypes.any,
   single: React.PropTypes.bool,
-  saturation: React.PropTypes.string,
-  brightness: React.PropTypes.string
 }
 
 const styles = StyleSheet.create({
   icon: {
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    backgroundColor: 'transparent',
   },
   text: {
     color: '#fff'
