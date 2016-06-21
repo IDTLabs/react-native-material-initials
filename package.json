@@ -1,6 +1,6 @@
-{
+t{
   "name": "react-native-material-initials",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "React Native library to generate Google Inbox style material list icons.",
   "author": {
     "name": "IDT Labs",
@@ -29,10 +29,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/IDTLabs/react-initicon"
+    "url": "git+https://github.com/IDTLabs/react-native-material-initials"
   },
   "bugs": {
-    "url": "https://github.com/IDTLabs/react-initicon/issues"
+    "url": "https://github.com/IDTLabs/react-native-material-initials/issues"
   },
-  "homepage": "https://github.com/IDTLabs/react-initicon#readme"
+  "homepage": "https://github.com/IDTLabs/react-native-material-initials#readme"
 }
