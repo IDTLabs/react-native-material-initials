@@ -1,0 +1,35 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/astiefel/.nvm/versions/node/v5.11.0/bin/node',
+1 verbose cli   '/Users/astiefel/.nvm/versions/node/v5.11.0/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.9.4
+3 info using node@v5.11.0
+4 verbose publish [ '.' ]
+5 verbose stack Error: Failed to parse json
+5 verbose stack Unexpected token 't' at 1:1
+5 verbose stack t{
+5 verbose stack ^
+5 verbose stack     at parseError (/Users/astiefel/.nvm/versions/node/v5.11.0/lib/node_modules/npm/node_modules/read-package-json/read-json.js:390:11)
+5 verbose stack     at parseJson (/Users/astiefel/.nvm/versions/node/v5.11.0/lib/node_modules/npm/node_modules/read-package-json/read-json.js:79:23)
+5 verbose stack     at /Users/astiefel/.nvm/versions/node/v5.11.0/lib/node_modules/npm/node_modules/read-package-json/read-json.js:48:5
+5 verbose stack     at /Users/astiefel/.nvm/versions/node/v5.11.0/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:78:16
+5 verbose stack     at tryToString (fs.js:414:3)
+5 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:401:12)
+6 verbose cwd /Users/astiefel/workspace/react-native-material-initials
+7 error Darwin 15.5.0
+8 error argv "/Users/astiefel/.nvm/versions/node/v5.11.0/bin/node" "/Users/astiefel/.nvm/versions/node/v5.11.0/bin/npm" "publish"
+9 error node v5.11.0
+10 error npm  v3.9.4
+11 error file /Users/astiefel/workspace/react-native-material-initials/package.json
+12 error code EJSONPARSE
+13 error Failed to parse json
+13 error Unexpected token 't' at 1:1
+13 error t{
+13 error ^
+14 error File: /Users/astiefel/workspace/react-native-material-initials/package.json
+15 error Failed to parse package.json data.
+15 error package.json must be actual JSON, not just JavaScript.
+15 error
+15 error This is not a bug in npm.
+15 error Tell the package author to fix their package.json file. JSON.parse
+16 verbose exit [ 1, true ]
