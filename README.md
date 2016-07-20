@@ -21,7 +21,7 @@ $ npm install --save react-native-material-initials
 
 ## React Native
 ```JavaScript
-var MaterialInitials = require('react-native-material-initials/native');
+import MaterialInitials from 'react-native-material-initials/native';
 ```
 
 ## Props
@@ -30,5 +30,5 @@ var MaterialInitials = require('react-native-material-initials/native');
 |`text`|String|The text to use to make initials|
 |`size`|Number|The pixel height / width of the icon|
 |`color`|String|Override the text color with any valid CSS color value|
-|`single`|Boolean|Whether to only use a single initial or now|
+|`single`|Boolean|Whether to only use a single initial or two|
 |`backgroundColor`|String|Override the background color with any valid CSS color value|
