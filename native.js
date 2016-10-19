@@ -35,7 +35,7 @@ class NativeIniticon extends Component {
                   },
                   this.props.style]}
         >
-          <Text style={[styles.text, {fontSize: this._getFontSize(this.props), color: this.props.color, backgroundColor: 'transparent'}]}>{this._getInitials(this.props)}</Text>
+          <Text allowFontScaling={false} style={[styles.text, {fontSize: this._getFontSize(this.props), color: this.props.color, backgroundColor: 'transparent'}]}>{this._getInitials(this.props)}</Text>
         </View>
       </View>
     );
