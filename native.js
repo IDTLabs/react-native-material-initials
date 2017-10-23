@@ -5,7 +5,8 @@ import {
   Text,
   StyleSheet
 } from 'react-native';
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class NativeIniticon extends Component {
 
@@ -43,11 +44,11 @@ class NativeIniticon extends Component {
 };
 
 NativeIniticon.propTypes = {
-  text: React.PropTypes.string.isRequired,
-  size: React.PropTypes.any.isRequired,
-  color: React.PropTypes.any,
-  backgroundColor: React.PropTypes.any,
-  single: React.PropTypes.bool,
+  text: PropTypes.string.isRequired,
+  size: PropTypes.any.isRequired,
+  color: PropTypes.any,
+  backgroundColor: PropTypes.any,
+  single: PropTypes.bool
 }
 
 const styles = StyleSheet.create({
