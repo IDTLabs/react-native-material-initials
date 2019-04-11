@@ -18,10 +18,15 @@ class NativeIniticon extends Component {
     let {text, single} = props;
     if (text !== null && typeof text === 'object') {
       return text;
-    } else if (text.indexOf(" ") > 0 && !single) {
-      return (text.split(" ")[0].charAt(0) + text.split(" ")[1].charAt(0)).toUpperCase();
-    } else {
-      return text.charAt(0).toUpperCase();
+    } else  {
+      let normalized = text.normalize().trim();
+      let symbols = [...normalized];
+      let indexOfSpace = symbols.indexOf(' ');
+      if (indexOfSpace < symbols.length && !single) {
+        return (symbols[0] + symbols[indexOfSpace+1]).toUpperCase();
+      } else {
+        return symbols[0].toUpperCase();
+      }
     }
   }
 
