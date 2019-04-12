@@ -19,7 +19,7 @@ class NativeIniticon extends Component {
     if (text !== null && typeof text === 'object') {
       return text;
     } else  {
-      let normalized = text.normalize().trim();
+      let normalized = (typeof (text.normalize) === 'function') ? text.normalize().trim() : text.trim();
       let symbols = [...normalized];
       let indexOfSpace = symbols.indexOf(' ');
       if (indexOfSpace < symbols.length && !single) {
