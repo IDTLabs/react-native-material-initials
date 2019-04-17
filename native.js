@@ -20,7 +20,7 @@ class NativeIniticon extends Component {
       return text;
     } else  {
       let normalized = (typeof (text.normalize) === 'function') ? text.normalize().trim() : text.trim();
-      let symbols = [...normalized];
+      let symbols = Array.from(normalized);
       let indexOfSpace = symbols.indexOf(' ');
       if (indexOfSpace < symbols.length && !single) {
         return (symbols[0] + symbols[indexOfSpace+1]).toUpperCase();
