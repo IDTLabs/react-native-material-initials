@@ -1,5 +1,6 @@
 "use strict";
-
+import 'core-js/es6/symbol';
+import 'core-js/fn/symbol/iterator';
 import {
   View,
   Text,
@@ -20,7 +21,7 @@ class NativeIniticon extends Component {
       return text;
     } else  {
       let normalized = (typeof (text.normalize) === 'function') ? text.normalize().trim() : text.trim();
-      let symbols = Array.from(normalized);
+      let symbols = [...normalized];
       let indexOfSpace = symbols.indexOf(' ');
       if (indexOfSpace < symbols.length && !single) {
         return (symbols[0] + symbols[indexOfSpace+1]).toUpperCase();

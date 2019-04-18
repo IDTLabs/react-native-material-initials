@@ -1,6 +1,6 @@
 {
   "name": "react-native-material-initials",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "React Native library to generate Google Inbox style material list icons.",
   "author": {
     "name": "IDT Labs",
@@ -19,7 +19,8 @@
   },
   "peerDependencies": {
     "react": "^15.1.0",
-    "react-native": "*"
+    "react-native": "*",
+    "core-js": "*"
   },
   "keywords": [
     "react-native",
