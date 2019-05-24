@@ -17,13 +17,13 @@ class NativeIniticon extends Component {
 
   _getInitials(props) {
     let {text, single} = props;
-    if (text !== null && typeof text === 'object') {
+    if ((typeof text !== 'string') || (text === '')) {
       return text;
-    } else  {
+    } else {
       let normalized = (typeof (text.normalize) === 'function') ? text.normalize().trim() : text.trim();
       let symbols = [...normalized];
       let indexOfSpace = symbols.indexOf(' ');
-      if (indexOfSpace < symbols.length && !single) {
+      if ((indexOfSpace > 0) && (indexOfSpace < symbols.length) && !single) {
         return (symbols[0] + symbols[indexOfSpace+1]).toUpperCase();
       } else {
         return symbols[0].toUpperCase();
