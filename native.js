@@ -1,6 +1,6 @@
 "use strict";
-import 'core-js/es6/symbol';
-import 'core-js/fn/symbol/iterator';
+import 'core-js/es/symbol';
+import 'core-js/features/symbol/iterator';
 import {
   View,
   Text,
