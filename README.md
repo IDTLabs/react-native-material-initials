@@ -21,7 +21,7 @@ $ npm install --save react-native-material-initials
 
 ## React Native
 ```JavaScript
-import MaterialInitials from 'react-native-material-initials/native';
+import MaterialInitials from 'react-native-material-initials';
 ```
 
 ## Props
